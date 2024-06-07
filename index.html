@@ -106,7 +106,12 @@ https://templatemo.com/tm-586-scholar
                   </p>
                   <div class="buttons">
                     <div class="main-button">
-                      <a href="#">Mulai Konsultasi</a>
+                      <a
+                        href="https://t.me/Sahabatkonseling"
+                        target="_blank"
+                        class="btn btn-primary mt-3"
+                        >Mulai Konsultasi</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -328,8 +333,8 @@ https://templatemo.com/tm-586-scholar
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-heading">
-              <h6>Test Kesehatan Mental</h6>
-              <h2>Test Kesehatan Mental</h2>
+              <h6>Tes Kesehatan Mental</h6>
+              <h2>Tes Kesehatan Mental</h2>
             </div>
           </div>
           <div class="col-lg-12 col-md-6">
@@ -368,7 +373,25 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
-    <div class="contact-us section" id="contact">
+    <div class="section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-heading">
+            <h6>Mulai Konsultasi kapan saja dan dimana saja</h6>
+            <h2>Mulai Konsultasi kapan saja dan dimana saja</h2>
+            <p>Mulai sesi konsultasi anda dengan satu klik melalui Telegram</p>
+            <a
+              href="https://t.me/Sahabatkonseling"
+              target="_blank"
+              class="btn btn-primary mt-3"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="contact-us section" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
@@ -441,7 +464,7 @@ https://templatemo.com/tm-586-scholar
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <footer>
       <div class="container">
@@ -457,25 +480,25 @@ https://templatemo.com/tm-586-scholar
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script>
-      const formKonsultasi = document.querySelector('#form-konsultasi');
+      // const formKonsultasi = document.querySelector('#form-konsultasi');
       const testMentalBtn = document.querySelector('#test-mental');
 
-      formKonsultasi.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = e.target.nama.value;
-        const age = e.target.umur.value;
-        const gender = e.target.jenis_kelamin.value;
-        const text = `Halo kak, perkenalkan saya ${name}. Saya ${gender} berumur ${age}. Saya menghargai kesempatan ini untuk berbicara mengenai masalah saya`;
-        const searchParam = new URLSearchParams();
-        console.log(name, age, gender);
-        searchParam.append('text', text);
-        const url = 'https://telegram.me/087812400301?text' + searchParam;
-        window.open(url, '_blank');
-      });
+      // formKonsultasi.addEventListener('submit', (e) => {
+      //   e.preventDefault();
+      //   const name = e.target.nama.value;
+      //   const age = e.target.umur.value;
+      //   const gender = e.target.jenis_kelamin.value;
+      //   const text = `Halo kak, perkenalkan saya ${name}. Saya ${gender} berumur ${age}. Saya menghargai kesempatan ini untuk berbicara mengenai masalah saya`;
+      //   const searchParam = new URLSearchParams();
+      //   console.log(name, age, gender);
+      //   searchParam.append('text', text);
+      //   const url = 'https://telegram.me/087812400301?text' + searchParam;
+      //   window.open(url, '_blank');
+      // });
 
       testMentalBtn.addEventListener('click', (e) => {
         window.open(
-          'https://docs.google.com/forms/d/e/1FAIpQLSeh7P7Hmt7qHGzNWnd9daUHtVtWbfl4QCFYLSGUIOoxfPH_6A/viewform',
+          'https://docs.google.com/forms/d/e/1FAIpQLSeh7P7Hmt7qHGzNWnd9daUHtVtWbfl4QCFYLSGUIOoxfPH_6A/viewform?usp=send_form',
           '_blank',
         );
       });
